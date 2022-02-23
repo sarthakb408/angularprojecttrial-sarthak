@@ -1,0 +1,15 @@
+<div class="container-fluid">
+
+    <h1 class="heading">{{titleheading}}</h1>
+    <p>{{pcont}}</p>
+    <p>Property binding</p>
+    <img [src]="imgurl" class="image1"><br>
+    <button class="btn btn-primary" (click)="counterval()">Click Me</button>
+    <p> {{count}}</p>
+
+</div>
+<div class="container-fluid">
+    <label>Enter Name:</label>
+    <input type="text" value="{{fname}}"><br>
+    <button class="btn btn-primary" (click)="fillname()">Fill Name</button>
+</div>
