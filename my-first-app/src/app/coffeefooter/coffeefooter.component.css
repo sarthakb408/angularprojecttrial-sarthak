@@ -1,0 +1,11 @@
+.footer{
+    background-color: #704100;
+    width: 100%;
+    height: 75px;
+}
+.copyright{
+    color: white;
+    font-size: 24px;
+    margin-left: 100px;
+    padding: 10px;
+}
