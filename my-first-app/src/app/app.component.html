@@ -44,6 +44,72 @@
     </table>
 </div> -->
 
-<app-coffeeheader></app-coffeeheader>
+<!-- <app-coffeeheader></app-coffeeheader>
 <app-coffeecontent></app-coffeecontent>
-<app-coffeefooter></app-coffeefooter>
+<app-coffeefooter></app-coffeefooter> -->
+
+<!-- <div class="container">
+    <label for="firstname">Firstname:</label>
+    <input name="firstname" [(ngModel)] ="fname">
+    <p>Your Name is {{fname}}</p>
+    <label for="lastname">Lastname:</label>
+    <input name="lastname" [(ngModel)] ="lname">
+    <p>Your Surname is {{lname}}</p>
+
+</div>
+
+<div class="container" *ngIf="able">
+    <p>Some Element</p>
+
+</div>
+
+<div class="container">
+<label for="enternumber">Enter Number:</label>
+<input name="getnewnumber" [(ngModel)]="gnumber">
+<p>The number is: {{gnumber}}</p>
+</div>
+<div class="container" *ngIf="evenodd()">
+    <p>Entered number is Even</p>
+</div>
+
+<div class="container">
+    <h6>Numbers:</h6>
+    <div *ngFor="let numArray of numArrays">
+    {{numArray}}
+    </div>
+    <h6>Names:</h6>
+    <div *ngFor="let strArray of strArrays">
+    {{strArray}}
+    </div>
+</div>
+
+<div class="container">
+    <h6>Names with more than 5 letters:</h6>
+    <div *ngFor="let str1Array of str1Arrays">
+        <div *ngIf="str1Array.length>5">
+            {{str1Array}}
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <h6>Names which are at odd position:</h6>
+    <div *ngFor="let str2Array of str2Arrays; let i = index" >
+        <div *ngIf="i % 2 == 0">
+            {{str2Array}}</div>
+    </div>
+</div>
+
+<div>
+    <app-header [itemreceived]="item"></app-header>
+</div>
+
+<div>
+    <app-coffeeheader></app-coffeeheader>
+</div>
+
+<div>
+    <app-header [sreceived]="str3Arrays"></app-header>
+</div> -->
+
+<app-header></app-header>

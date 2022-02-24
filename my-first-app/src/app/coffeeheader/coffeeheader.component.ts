@@ -12,4 +12,5 @@ export class CoffeeheaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  name = "Student Hostel";
 }

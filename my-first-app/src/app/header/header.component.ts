@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
 
 @Component({
   selector: 'app-header',
@@ -12,4 +12,14 @@ export class HeaderComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  @Input() itemreceived = "";
+  @Input() sreceived:any;
+
+  imgurl = ".././assets/images/coffeelogo.jfif"
+  carturl = ".././assets/images/shoppingcart.png"
+
+  count:any="0";
+  increaseitem(){
+    this.count++;
+  }
 }
