@@ -14,11 +14,18 @@ export class ProductsComponent implements OnInit {
   @Output() newItemEvent = new EventEmitter();
     additem(){
       this.newItemEvent.emit();
-  
     }
 
   img1url = ".././assets/images/product1.jfif"
   img2url = ".././assets/images/product2.jfif"
   img3url = ".././assets/images/product3.jfif"
 
+  description = false;
+  show_description(){
+    if(this.description == false){
+      this.description = true;
+    }else{
+      this.description = false;
+    }
+  }
 }

@@ -1,0 +1,38 @@
+.image1{
+    float: left;
+    height: 300px;
+    width: 400px;
+}
+.container{
+    float: left;
+    height: 700px;
+    width: 100%;
+    border: 1px solid black;
+    background-color: #d0d6e4;
+}
+.headind-blacktea{
+    float: right;
+    text-align: center;
+    margin-right: 350px;
+}
+.shortdesc{
+    float: right;
+    font-size: 24px;
+    text-align: center;
+}
+.rs{
+    float: right;
+    font-size: 30px;
+    margin-right: 380px;
+    margin-bottom: 0px;
+}
+.tax{
+    float: right;
+    font-size: 20px;
+    margin-top: 5px;
+    margin-right: 350px;
+}
+.button{
+    float: right;
+    margin-right: 380px;
+}

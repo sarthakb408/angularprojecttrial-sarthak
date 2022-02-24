@@ -11,6 +11,7 @@ import { CoffeefooterComponent } from './coffeefooter/coffeefooter.component';
 import { CoffeecontentComponent } from './coffeecontent/coffeecontent.component';
 import { LogoComponent } from './coffeeheader/logo/logo.component';
 import { ProductsComponent } from './header/products/products.component';
+import { ProductdetailsComponent } from './header/products/productdetails/productdetails.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { ProductsComponent } from './header/products/products.component';
     CoffeefooterComponent,
     CoffeecontentComponent,
     LogoComponent,
-    ProductsComponent
+    ProductsComponent,
+    ProductdetailsComponent
   ],
   imports: [
     BrowserModule,
