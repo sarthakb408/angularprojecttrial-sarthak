@@ -1,30 +1,24 @@
-<div class="card" style="width: 18rem;">
-    <img [src]="img1url" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary" (click)="additem()">Add to Cart</a><br><br>
-      <a href="#" class="btn btn-primary" (click)="show_description()">Explore More</a>
+<div class="row">
+  <div class="col-sm-3" *ngFor="let d of data">
+    <div class="card">
+      <img [src]="img4url" alt="...">
+      <div class="card-body">
+        <h5 class="card-title">{{d.productname}}</h5>
+        <p>{{d.price}}</p>
+        <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
+        <a href="#" class="btn btn-primary m-3" (click)="additem(d)">Add to Cart</a>
+
+        <a href="#" class="btn btn-primary" (click)="removeitem()">-</a>
+        <span> [{{count}}] </span>
+
+        <a href="#" class="btn btn-primary" (click)="additem(d)">+</a>
+
+        <br><br>
+        <a href="#" class="btn btn-primary" (click)="show_description()">Explore More</a>
+      </div>
     </div>
   </div>
-  <div class="card" style="width: 18rem;">
-    <img [src]="img2url" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary" (click)="additem()">Add to Cart</a><br><br>
-      <a href="#" class="btn btn-primary" (click)="show_description()">Explore More</a>
-    </div>
-  </div>
-  <div class="card" style="width: 18rem;">
-    <img [src]="img3url" class="card-img-top" alt="...">
-    <div class="card-body">
-      <h5 class="card-title">Card title</h5>
-      <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-      <a href="#" class="btn btn-primary" (click)="additem()">Add to Cart</a><br><br>
-      <a href="#" class="btn btn-primary" (click)="show_description()">Explore More</a>
-    </div>
-  </div>
+
 
   <div class="container">
     <app-productdetails *ngIf="description"></app-productdetails>

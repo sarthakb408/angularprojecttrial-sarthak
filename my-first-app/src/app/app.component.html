@@ -112,4 +112,57 @@
     <app-header [sreceived]="str3Arrays"></app-header>
 </div> -->
 
+<!-- <app-header></app-header> -->
+
+<!-- <div class="container">
+    <h6>Use of ngClass:</h6>
+    <p [ngClass]="item>10?'red' : 'yellow'">{{item}}</p>
+    <p [ngClass]="classfeature()">{{item}}</p>
+</div>
+
+<div class="container">
+    <h6>Even and Odd numbers have specific color:</h6>
+    <div *ngFor="let newArray of newArrays">
+        <p [ngClass]="newArray%2 ==0 ?'purple' : 'green'">{{newArray}}</p>
+    </div>
+</div>
+
+<div class="container">
+    <h6>Enable and Disable Button:</h6>
+    <button class="btn btn-primary" (click)="enable()">Enable</button>
+    <button class="btn btn-primary" (click)="disable()">Disable</button>
+    <p *ngIf="flag" >Welcome to the Angular!</p>
+    
+</div>
+
+<div class="container">
+    <h6>Use of ngStyle:</h6>
+    <button [ngStyle]="{background:'yellow'}">Click Me</button>
+    <button [ngStyle]="appendstyle">Click Me</button>
+</div>
+
+<div class="container">
+    <h6>Store json data in a table:</h6>
+    <table>
+        <tr>
+            <th>ID</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>Phone No</th>
+            <th>Website</th>
+            <th>Disable Data</th>
+        </tr>
+        <tr *ngFor="let d of data" [ngClass]="d.id%2 ==0?'lightred' : 'lightgreen'">
+            <td>{{d.id}}</td>
+            <td>{{d.name}}</td>
+            <td>{{d.username}}</td>
+            <td>{{d.email}}</td>
+            <td>{{d.phone}}</td>
+            <td>{{d.website}}</td>
+            <td><button class="btn btn-primary" (click)="disablerow(d)">Delete</button></td>
+        </tr>
+    </table>
+</div> -->
+
 <app-header></app-header>

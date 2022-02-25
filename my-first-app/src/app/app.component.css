@@ -1,6 +1,29 @@
-.heading{
+/* .heading{
     color: blue;
 }
 .image1{
     width: 300px;
+} */
+
+.red{
+    color: red;
+}
+.yellow{
+    color: yellow;
+}
+.purple{
+    color: purple;
+}
+.green {
+    color: green;
+}
+tr,th,td{
+    border: 1px solid black;
+    padding: 10px;
+}
+.lightgreen{
+    background-color: lightgreen;
+}
+.lightred{
+    background-color: #ffcccb;
 }

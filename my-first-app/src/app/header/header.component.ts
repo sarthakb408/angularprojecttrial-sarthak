@@ -19,7 +19,29 @@ export class HeaderComponent implements OnInit {
   carturl = ".././assets/images/shoppingcart.png"
 
   count:any="0";
+  totalquantity = 0;
+  bill= 0;
+  cartitems=[
+    {
+      "id": "",
+      "productname": "",
+      "price": "",
+      "quantity": "",
+      "manufacturinglocation": "",
+      "presentstock": "",
+
+    }
+  ]
   increaseitem(){
     this.count++;
+  }
+  decreaseitem(){
+    this.count--;
+  }
+  addtocart(data : any){
+    this.cartitems.push(data);
+    this.totalquantity += Number(data.quantity);
+    this.bill += Number(data.quantity) * Number(data.price);
+
   }
 }

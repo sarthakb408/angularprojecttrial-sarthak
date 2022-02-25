@@ -1,4 +1,9 @@
 .card{
-    float: left;
-    margin: 60px;
+    
+    margin: 15px;
+    
+}
+.card-img-top{
+    height: 214px;
+    
 }

@@ -16,4 +16,6 @@ export class ProductdetailsComponent implements OnInit {
       this.product1Event.emit();
     }
   img1url = ".././assets/images/product1.jfif"
+
+  
 }

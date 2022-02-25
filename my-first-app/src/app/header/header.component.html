@@ -15,6 +15,30 @@
     <p class="cart"><img [src]="carturl" class="cartlogo">[{{count}}]</p>
 </div>
 
-<div class="container">
-    <app-products (newItemEvent)="increaseitem()"></app-products>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Sr No</th>
+            <th scope="col">Name</th>
+            <th scope="col">Price</th>
+            <th scope="col">Quantity</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let cartitem of cartitems">
+            <th scope="row">{{cartitem.id}}</th>
+            <td>{{cartitem.productname}}</td>
+            <td>{{cartitem.price}}</td>
+            <td>{{cartitem.quantity}}</td>
+        </tr>
+        <tr>
+            <th scope="row">-</th>
+            <td><strong>Total</strong></td>
+            <td>{{bill}}</td>
+            <td>{{totalquantity}}</td>
+        </tr>
+    </tbody>
+</table>
+<div>
+    <app-products (newItemEvent)="increaseitem()" (rmvItemEvent)="decreaseitem()" (newItemEvent)="addtocart($event)"></app-products>
 </div>
