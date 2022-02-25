@@ -43,7 +43,7 @@ export class ProductsComponent implements OnInit {
     {
       "id": 1,
       "productname": "Black Tea",
-      "price": "Rs.80/-",
+      "price": "80",
       "quantity": "40",
       "manufacturinglocation": "Vadodara",
       "presentstock": "40",
@@ -51,7 +51,7 @@ export class ProductsComponent implements OnInit {
     {
       "id": 2,
       "productname": "Cold Coffee",
-      "price": "Rs.120/-",
+      "price": "120",
       "quantity": "30",
       "manufacturinglocation": "Vadodara",
       "presentstock": "30",
@@ -59,7 +59,7 @@ export class ProductsComponent implements OnInit {
     {
       "id": 3,
       "productname": "Mocha",
-      "price": "Rs.150/-",
+      "price": "150",
       "quantity": "35",
       "manufacturinglocation": "Vadodara",
       "presentstock": "35",
@@ -67,7 +67,7 @@ export class ProductsComponent implements OnInit {
     {
       "id": 4,
       "productname": "Irish Coffee",
-      "price": "Rs.200/-",
+      "price": "200",
       "quantity": "60",
       "manufacturinglocation": "Vadodara",
       "presentstock": "60",
