@@ -10,7 +10,7 @@
     </div>
 </div> -->
 
-<div class="header">
+<!-- <div class="header">
     <img [src]="imgurl" class="image">
     <p class="cart"><img [src]="carturl" class="cartlogo">[{{count}}]</p>
 </div>
@@ -41,4 +41,31 @@
 </table>
 <div>
     <app-products (newItemEvent)="increaseitem()" (rmvItemEvent)="decreaseitem()" (newItemEvent)="addtocart($event)"></app-products>
-</div>
+</div> -->
+
+<!-- <table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>Phone</th>
+            <th>Website</th>
+            <th>Company</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let userdata of UserInformation">
+            <td>{{userdata.id}}</td>
+            <td>{{userdata.name}}</td>
+            <td>{{userdata.username}}</td>
+            <td>{{userdata.email}}</td>
+            <td>{{userdata.address.city}}</td>
+            <td>{{userdata.phone}}</td>
+            <td>{{userdata.website}}</td>
+            <td>{{userdata.company.name}}</td>
+        </tr>
+    </tbody>
+</table> -->

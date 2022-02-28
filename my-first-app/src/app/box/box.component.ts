@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { UserInformationService } from '.././user-information.service'
 @Component({
   selector: 'app-box',
   templateUrl: './box.component.html',
@@ -7,8 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class BoxComponent implements OnInit {
 
-  constructor() { }
-
+  constructor(public udata: UserInformationService) { }
+  UserInformation = this.udata.userdatas;
+  
+  text=this.udata.senddata();
   ngOnInit(): void {
   }
 

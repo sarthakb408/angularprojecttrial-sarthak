@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+import { UserInformationService } from '.././user-information.service'
+
+
 @Component({
   selector: 'app-footer',
   templateUrl: './footer.component.html',
@@ -7,7 +10,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FooterComponent implements OnInit {
 
-  constructor() { }
+  constructor(private udata: UserInformationService) { }
+  UserInformation = this.udata.userdatas;
 
   ngOnInit(): void {
   }

@@ -12,6 +12,8 @@ import { CoffeecontentComponent } from './coffeecontent/coffeecontent.component'
 import { LogoComponent } from './coffeeheader/logo/logo.component';
 import { ProductsComponent } from './header/products/products.component';
 import { ProductdetailsComponent } from './header/products/productdetails/productdetails.component';
+import { DatetimeService } from './datetime.service'
+import { UserInformationService } from './user-information.service'
 
 @NgModule({
   declarations: [
@@ -30,7 +32,7 @@ import { ProductdetailsComponent } from './header/products/productdetails/produc
     BrowserModule,
     FormsModule
   ],
-  providers: [],
+  providers: [ DatetimeService, UserInformationService ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

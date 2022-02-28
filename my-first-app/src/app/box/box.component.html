@@ -1,3 +1,57 @@
-<p>box works!</p>
+<!-- <p>box works!</p>
     <app-header></app-header>
-    
+     -->
+
+<!-- <table class="table">
+    <thead>
+        <tr>
+            <th>Id</th>
+            <th>Name</th>
+            <th>Username</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>Phone</th>
+            <th>Website</th>
+            <th>Company</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let userdata of UserInformation">
+            <td>{{userdata.id}}</td>
+            <td>{{userdata.name}}</td>
+            <td>{{userdata.username}}</td>
+            <td>{{userdata.email}}</td>
+            <td>{{userdata.address.city}}</td>
+            <td>{{userdata.phone}}</td>
+            <td>{{userdata.website}}</td>
+            <td>{{userdata.company.name}}</td>
+        </tr>
+    </tbody>
+</table> -->
+<!-- <div class="container">
+    <p>{{udata.sendText()}}</p>
+</div> -->
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+
+                <th>Email</th>
+                <th>Password</th>
+                <th>Address</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let t of text, let i=index" >
+
+                <td>{{text[i].email}}</td>
+                <td>{{text[i].password}}</td>
+                <td>{{text[i].address}}</td>
+                <td>{{text[i].city}}</td>
+
+            </tr>
+        </tbody>
+    </table>
+</div>
+

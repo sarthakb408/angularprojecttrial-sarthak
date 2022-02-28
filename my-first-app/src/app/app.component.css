@@ -5,7 +5,7 @@
     width: 300px;
 } */
 
-.red{
+/* .red{
     color: red;
 }
 .yellow{
@@ -26,4 +26,11 @@ tr,th,td{
 }
 .lightred{
     background-color: #ffcccb;
+} */
+
+.table{
+    background-color: lightsteelblue;
+}
+th,td,tr{
+    border: 1px solid black;
 }
