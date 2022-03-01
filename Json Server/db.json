@@ -1,0 +1,35 @@
+{
+  "posts": [
+    {
+      "id": 1,
+      "title": "Json-server",
+      "author": "typecode"
+    }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "James",
+      "address": "Noida"
+    },
+    {
+      "id": 2,
+      "name": "James",
+      "address": "Noida"
+    },
+    {
+        "id": 3,
+        "name": "Peter",
+        "address": "USA"
+      },
+      {
+        "id": 4,
+        "name": "Theo",
+        "address": "LA"
+      },{
+        "id": 5,
+        "name": "Devon",
+        "address": "NY"
+      }
+  ]
+}

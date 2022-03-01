@@ -1,0 +1,67 @@
+<div class="container">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+        <div class="col-md-6">
+            <label class="form-label">
+                First Name:
+                <input formControlName="firstname"  placeholder="Enter First Name">
+            </label>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">
+                Last Name:
+                <input formControlName="lastname" placeholder="Enter Last Name">
+            </label>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">
+                Email:
+                <input formControlName="email" placeholder="Enter EmailId">
+            </label>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">
+                Password:
+                <input type="password" formControlName="password" placeholder="Enter Password">
+            </label>
+        </div>
+        <div class="col-md-6">
+            <label class="form-label">
+                Address:
+                <input formControlName="address">
+            </label>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">
+                City:
+                <input formControlName="city">
+            </label>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">
+                Age:
+                <input formControlName="age">
+            </label>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">
+                Phone:
+                <input formControlName="phone">
+            </label>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">
+                From:
+                <input type="date" formControlName="from">
+            </label>
+        </div>
+        <div class="col-md-3">
+            <label class="form-label">
+                To:
+                <input type="date" formControlName="to">
+            </label>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary" [disabled]="myForm.invalid" >Submit</button>
+        </div>
+    </form>
+</div>

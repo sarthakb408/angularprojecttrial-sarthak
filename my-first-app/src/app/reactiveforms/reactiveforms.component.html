@@ -1,0 +1,25 @@
+<div class="container">
+    <form [formGroup]="myForm" (ngSubmit)="onSubmit(myForm)">
+        <div>
+            <label>
+                Name:
+                <input formControlName="name" placeholder="Enter Name" >
+            </label>
+        </div>
+        <div>
+                <label>
+                    Email:
+                    <input formControlName="email" placeholder="Enter EmailId">
+                </label>
+        </div>
+        <div>
+            <label>
+                Message:
+                <input formControlName="message" placeholder="Enter Message">
+            </label>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary" [disabled]="myForm.invalid">Submit</button>
+        </div>
+    </form>
+</div>
