@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { DatetimeService } from './datetime.service';
-import { UserInformationService } from './user-information.service'
+import { UserInformationService } from './user-information.service';
+import { observable } from 'rxjs';
+import { HttpClient } from '@angular/common/http';
+import { HttpDataRequestService } from './http-data-request.service';
 
 @Component({
   selector: 'app-root',
@@ -328,38 +331,56 @@ export class AppComponent {
   //   this.udata.testToShow(this.email);
   // }
 
-  constructor(public udata: UserInformationService){}
-  UserInformation = this.udata.userdatas;
-  user:any=`{
-    "email":'',
-    "password":'',
-    "address" : '',
-    "city":''
-  }`;
-  onSubmitofform(receiveuser:any){
-    // console.log(user)
-    this.udata.testToShow(receiveuser);
+  // constructor(public udata: UserInformationService) { }
+  // UserInformation = this.udata.userdatas;
+  // user: any = `{
+  //   "email":'',
+  //   "password":'',
+  //   "address" : '',
+  //   "city":''
+  // }`;
+  // onSubmitofform(receiveuser:any){
+  //   // console.log(user)
+  //   this.udata.testToShow(receiveuser);
+  // }
+
+  // array:any=[];
+  // t:any;
+  // i:any;
+  // calculate(value:any){
+  //   for(let i=1;i<=10;i++){
+  //     this.t=(value*i)
+  //     this.array[i] = value + "*" + i + "=" + this.t;
+  //   }
+  // }
+
+  // sdate :any;
+  // edate :any;
+  // price: any;
+  // totaldays:any;
+  // calculateamount(sdate:any, edate:any){
+  //   this.sdate = new Date(sdate).getTime();
+  //   this.edate = new Date(edate).getTime();
+  //   let days = (this.edate-this.sdate)/(1000*3600*24);
+  //   this.price=1000;
+  //   console.log("Total amount for booking is " + days + " days is "+ (this.price)*days);
+  // }
+  receiveData:any;
+  id = "";
+  name = "";
+  address = "";
+  constructor(public ht: HttpDataRequestService) { }
+
+  ngOnInit() {
+    this.ht.getdata().subscribe((data) => this.show(data));
   }
 
-  array:any=[];
-  t:any;
-  i:any;
-  calculate(value:any){
-    for(let i=1;i<=10;i++){
-      this.t=(value*i)
-      this.array[i] = value + "*" + i + "=" + this.t;
-    }
+  show(data: any) {
+    this.receiveData = data;
   }
 
-  sdate :any;
-  edate :any;
-  price: any;
-  totaldays:any;
-  calculateamount(sdate:any, edate:any){
-    this.sdate = new Date(sdate).getTime();
-    this.edate = new Date(edate).getTime();
-    let days = (this.edate-this.sdate)/(1000*3600*24);
-    this.price=1000;
-    console.log("Total amount for booking is " + days + " days is "+ (this.price)*days)
+  addData(id:any){
+    this.name = this.receiveData[id-1].name;
+    this.address = this.receiveData[id-1].address;
   }
 }
